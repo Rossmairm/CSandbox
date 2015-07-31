@@ -1,17 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-
-int main() {
-    typedef char byte;
+int strings() {
     int dog = 2002020;
    // int *cat= 14;
     char this[100];
     int count;
-    char *thisbetter = "looking";
-    byte *bit = (byte *) malloc(1l*1024l*1024l*1024l);
-    bit[1002]= 'd';
-    printf("%s", (char *) bit);
+
     this[0] = 'l';
     this[1] = 'o';
     this[2] = 'o';
@@ -24,15 +18,13 @@ int main() {
     {
 
         printf("%c", this[count]);
-    }
-
-    printf("%s", thisbetter);
-
+    } 
 
     printf("\n");
 
 
-    //printf("\n dogs are life  %lu \n", *cat);
+  //:w
+  //printf("\n dogs are life  %lu \n", *cat);
 
 
 }
