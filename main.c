@@ -9,7 +9,7 @@ int main() {
     char this[100];
     int count;
     char *thisbetter = "looking";
-    byte *bit = (byte *) malloc(1l*1024l*1024l*1024l);
+    byte *bit = (byte *) calloc(1, 6l*1024l*1024l*1024l);
     bit[1002]= 'd';
     printf("%s", (char *) bit);
     this[0] = 'l';
@@ -19,12 +19,26 @@ int main() {
     this[4] = 'i';
     this[5] = 'n';
     this[6]= 0;
+     
+    
+int i=0;
+    while (1==1){
+    
+        bit[i]='@';
+         i=i+1;
 
-    for(count=0; count<7 ; count= count+1)
+    }
+    
+
+   
+    //*bit = "dsfdsf dfsdefsdfdsf DS \0";
+
+    for(count=0; count<-2 ; count= count+1)
+
     {
 
-        printf("%c", this[count]);
-    }
+  
+            }
 
     printf("%s", thisbetter);
 
