@@ -12,9 +12,10 @@ int main(){
 //   input = input + "\0"; 
     if (sizeof(input)>sizeof(output)) {
     middle= (char *) malloc(sizeof(input));
-    strcpy(middle, input);
-
-    for(int i; i<350; i=i+1){    
+    for(int i; i<350; i=i+1){
+    middle[i]=(char)((int)middle[i] +1);
+    }
+    
     printf("%s"," \n done\n");
     }
 
@@ -24,4 +25,4 @@ int main(){
 
     printf("%s",output);
     }
-}
+
